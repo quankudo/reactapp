@@ -1,0 +1,141 @@
+.utilities {
+    padding-top: 5rem;
+    background-color: #f5f6f8;
+    
+}
+
+.utilities > div > h3 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: black;
+    padding: 8px 0px 8px 8px;
+}
+
+.utilities > div > a {
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+}
+
+
+.utilities > div > span {
+    width: 0.04rem;
+    height: 3rem;
+    background-color: #a7a8aa;
+    margin: 0 1rem;
+}
+
+.utilities > div > a i {
+    margin-left: 1rem;
+}
+
+.utilities_container { 
+    position: relative;
+    overflow: hidden;
+}
+
+.utilities_container.active > .utilitiesList {
+    transform: translateX(-30rem);
+
+}
+
+.utilitiesList {
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    width: 130%;
+    margin-top: 3rem;
+    align-items: stretch;
+}
+
+.utilitiesList > .box {
+    flex: 1 1 30rem;
+}
+
+.utilitiesList > .box .img {
+    height: 35rem;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.utilitiesList > .box .img img {
+    width: 60%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.utilitiesList > .box .content {
+    position: relative;
+    background-color: #fff;
+    padding: 3rem 1.5rem;
+    min-height: 15rem;
+}
+
+.utilitiesList > .box .content span {
+    position: absolute;
+    top: -2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: black;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.utilitiesList > .box .content p {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.utilities_container > .icon {
+    position: absolute;
+    top: 50%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.utilities_container > .icon:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.utilities_container > .icon.fa-chevron-left {
+    left: 0;
+    display: none;
+}
+
+.utilities_container > .icon.fa-chevron-right {
+    right: 0;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 500px) {
+    .utilitiesList > .box .img {
+        margin-bottom: 0;
+    } 
+
+    .utilitiesList > .box .content {
+        min-height: 30rem;
+    }
+}
+
+
+

@@ -1,0 +1,114 @@
+.instruct {
+    background-color: #f5f6f8;
+}
+
+.instruct_container {
+    padding-top: 2rem;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.instruct_container > h3 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: black;
+    padding: 8px 0px 8px 8px;
+    text-align: center;
+}
+
+.instruct_container .list_instruct {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 0 4rem;
+}
+
+.instruct_container .list_instruct .box {
+    flex: 1 1 35rem;
+}
+
+.instruct_container .list_instruct .box .img {
+    width: 30rem;
+    height: 40rem;
+}
+
+.instruct_container .list_instruct .box .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.instruct_container .list_instruct .box .content {
+    background-color: #fff;
+}
+
+.instruct_container .list_instruct .box >  span {
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 4.3rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.instruct_container .list_instruct .box .content h4 {
+    font-size: 1.6rem;
+    color: black;
+    margin-bottom: 1.6rem;
+}
+
+.instruct_container .list_instruct .box .content ul li {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.instruct_container .list_instruct .box .content ul li,
+.instruct_container .list_instruct .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #616161;
+}
+
+.link_QR {
+    padding: 3rem 0;
+    background-color: #f5f6f8;
+}
+
+.link_QR a {
+    justify-content: center;
+    background-color: #fff;
+    width: max-content;
+    margin: 0 auto;
+    padding: 1rem ;
+    border-radius: 10px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.link_QR img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+}
+
+.link_QR span {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+@media (max-width: 990px) {
+    .list_instruct {
+        flex-wrap: wrap;
+        align-items: center;
+        
+    }
+
+    .instruct_container .list_instruct .box .img {
+        margin: 0 auto;
+    }
+}

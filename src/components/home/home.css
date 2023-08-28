@@ -1,0 +1,67 @@
+.home {
+    padding: 2rem 7%;
+    background-image: url(../../assets/img/anh3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.home .homeNav {
+    margin-bottom: 5rem;
+}
+
+.home .homeNav p {
+    color: #A2A2A2;
+    font-size: 1.4rem;
+}
+
+.home .homeNav p:last-child {
+    color: black;
+}
+
+.home .homeNav p a {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.home .homeBanner {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: column;
+    margin-top: 10rem;
+} 
+
+.home .homeBanner h3 {
+    font-size: 3.2rem;
+    color: white;  
+    font-weight: 500;
+
+}
+
+.home .homeBanner p {
+    font-size: 24px;
+    color: white;
+}
+
+.home .homeBanner a {
+    color: white;
+    padding: 1.5rem;
+    background-color: black;
+    width: max-content;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.home .homeBanner a i {
+    color: var(--primary-color);
+    margin-left: 10rem;
+}
+
+@media (max-width: 1024px) {
+    .home {
+        margin-top: 5.4rem;
+    }
+}

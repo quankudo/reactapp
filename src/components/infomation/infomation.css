@@ -1,0 +1,76 @@
+.infomation {
+    background-color: #f5f6f8;
+}
+
+.infomation > h3 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: black;
+    padding: 8px 0px 8px 8px;
+}
+
+.infomation .list {
+    background-color: #fff;
+    padding: 1rem;
+    margin-top: 5rem;
+    align-items: stretch;
+}
+
+.infomation .list .box {
+    flex: 1 1 20rem;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.infomation .list .box .title {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.infomation .list .box > span {
+    position: absolute;
+    top: -3rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    line-height: 4rem;
+} 
+
+.infomation .list .box p i {
+    margin-left: 1rem;
+    color: var(--primary-color);
+}
+
+.infomation .list .box p {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+    
+
+    .infomation .list {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .infomation .list .box {
+        margin-left: 3rem;
+    } 
+}
+
+@media (max-width: 550px) {
+    .infomation > h3 {
+        text-align: center;
+    }
+
+    .infomation .list .box {
+        margin-left: 7rem;
+    }
+}

@@ -1,0 +1,100 @@
+.header_nav1 {
+    background-color: #f5f6f8;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    z-index: 111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.header_nav1 .header_nav1-left a,
+.header_nav1 .header_nav1-right a {
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.header_nav1 .header_nav1-left > a,
+.header_nav1 .header_nav1-right > a {
+    position: relative;
+}
+
+.header_nav1 .header_nav1-left > a span i,
+.header_nav1 .header_nav1-right > a span i {
+    transition: 0.3s;
+}
+
+.header_nav1 .header_nav1-left > a span.hover i,
+.header_nav1 .header_nav1-right > a span.hover i {
+    transform: rotate(180deg);
+}
+
+
+.header_nav1 .header_nav1-left > a ul,
+.header_nav1 .header_nav1-right > a ul {
+    position: absolute;
+    top: calc( 100% + 1rem );
+    left: 0;
+    padding: 1rem 0.8rem;
+    background-color: #fff;
+    z-index: 111;
+    width: max-content;
+}
+
+.header_nav1 .header_nav1-right > a ul {
+    padding-right: 2rem;
+}
+
+.header_nav1 .header_nav1-left > a ul::after,
+.header_nav1 .header_nav1-right > a ul::after {
+    content: '';
+    position: absolute;
+    top: -2.5rem;
+    left: 0.6rem;
+    border: 1.5rem solid #fff;
+    border-color: transparent transparent #fff transparent;
+    z-index: 3;
+}
+
+.header_nav1 .header_nav1-left > a ul li:not(last-child),
+.header_nav1 .header_nav1-right > a ul li:not(last-child) {
+    margin-bottom: 0.8rem;
+}
+
+.header_nav1 .header_nav1-left a {
+    padding-right: 1.5rem;
+}
+
+.header_nav1 a:hover {
+    color: var(--primary-color);
+}
+
+.header_nav1 .header_nav1-right a {
+    padding-left: 1.5rem;
+}
+
+.header_nav1 .header_nav1-left > a::after,
+.header_nav1 .header_nav1-right > a::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 1.3rem;
+    background-color: #616161;
+    right: 0;
+    content: '';
+}
+
+.header_nav1 .header_nav1-right > a::after {
+    left: 0;
+}
+
+@media (max-width: 1024px) {
+    .header_nav1 {
+        display: none;
+    }
+}
+

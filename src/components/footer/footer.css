@@ -1,0 +1,112 @@
+.footer {
+    padding: 3rem 7%;
+    background-color: #212121;
+}
+
+.footer .top .heading .img {
+    width: 28rem;
+    height: 4rem;
+}
+
+.footer .top .heading .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer .top .heading .link {
+    align-items: center;
+
+}
+
+.footer .top .heading .link span {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.footer .top .heading .link span:hover {
+    text-decoration: underline;
+}
+
+.footer .top .heading .link i {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    transition: 0.3s;
+}
+
+.footer .top .heading .link i.active {
+    transform: rotate(180deg);
+}
+
+.footer .top .list {
+    align-items: stretch;
+    margin-top: 3rem;
+}
+
+.footer .top .list .box h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.footer .top .list .box .contents a {
+    display: block;
+    color: #a2a2a2;
+    padding-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.footer .top .list .box h3:hover,
+.footer .top .list .box .contents a:hover {
+    text-decoration: underline;
+}
+
+.footer .top .icons {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+.footer .top .icons p {
+    color: #a2a2a2;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.footer .top .icons .list_icons i {
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color: #a2a2a2;
+    color: black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.4rem;
+    margin: 0 1rem;
+}
+
+.footer .bottom {
+    font-size: 1.3rem;
+    border-top: 1px solid #a2a2a2;
+    padding: 4rem 0 4rem;
+    margin-top: 8rem;
+    color: #a2a2a2;
+    line-height: 1.5;
+}
+
+.footer .bottom a {
+    display: block;
+}
+
+@media (max-width: 550px) {
+    .footer .bottom,
+    .footer .top .heading {
+        flex-direction: column;
+    }
+
+    .footer .top .icons {
+        align-items: center;
+    }
+}
+

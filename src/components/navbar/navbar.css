@@ -1,0 +1,226 @@
+/* logo navbar */
+.navbar .logo img {
+    width: 25rem;
+    height: 5rem;
+    object-fit: contain;
+}
+
+.navbar {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: 5rem;
+    z-index: 100;
+}
+
+/* list ul */
+
+.navbar ul li a {
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    color: #616161;
+    font-weight: 500;
+}
+
+.navbar > ul > li > a > i {
+    display: none;
+}
+
+.navbar > ul > li span {
+    text-align: center;
+}
+
+.navbar ul li a:hover {
+    color: black;
+}
+
+.navbar > ul > li {
+    position: relative;
+}
+
+.navbar ul li::before {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 5rem;
+    content: '';
+    height: 3rem;
+    background-color: transparent;
+}
+
+.navbar ul li:hover .hoverNav{
+    display: flex;
+}
+
+.navbar > ul > li::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0.5rem;
+    background-color: var(--primary-color);
+    transition: 0.4s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* login */
+.navbar .login a {
+    display: block;
+    padding: 1.5rem 1.4rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.navbar .login .icon_log {
+    display: none;
+    font-size: 3rem;
+    color: #616161;
+    border-left: 1px solid #a9a8a8;
+    margin-left: 2rem;
+    padding: 0.6rem 0.6rem 0.6rem 2rem;
+}
+
+.navbar .spanNav {
+    display: none;
+}
+
+
+/* responsive */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navbar {
+        height: 8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    html {
+        font-size: 50%;
+    }
+
+    .navbar .login a {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar {
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        margin-top: 0;
+    }
+
+    .navbar::after {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        content: '';
+        z-index: -1;
+    }
+    /* list ul */
+
+    .navbar > ul {
+        position: absolute;
+        top: 100%;
+        left: 7%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        right: 7%;
+        transition: all 0.4s linear;
+    }
+
+    .navbar > ul > li {
+        width: 100%;
+    }
+
+    .navbar > ul > li::after {
+        display: none;
+    }
+
+    .navbar > ul > li a {
+        width: 100%;
+        border-bottom: 1px solid rgb(197, 196, 196);
+        padding: 1.5rem 1rem 1.5rem 0;
+        color: black;
+        font-size: 1.7rem;
+        align-items: center;
+    }
+
+    .navbar > ul.active {
+        transform: translate(-120%);
+    }
+
+    .navbar ul li a > i {
+        display: block;
+        color: var(--primary-color);
+    }
+
+    /* hover navbar */
+    .navbar ul li > .hoverNav {
+        display: flex;
+        position: fixed;
+        top: 5.5rem;    
+        background-color: #fff;
+        transition: all 0.4s linear;
+        z-index: -1;
+        opacity: 0;
+        left: 100%;
+        right: 7%;
+    }
+
+    .navbar ul li.active > .hoverNav {
+        left: 120%;
+        width: 100%;
+        z-index: 5;
+        opacity: 1;
+    }
+
+    .navbar ul li.active > .spanNav {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        left: 120%;
+        z-index: 5;
+        font-size: 1.8rem;
+        width: max-content;
+        color: black;
+        font-weight: 500;
+        cursor: pointer;
+    }
+
+    .navbar ul li.active > .spanNav > i {
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    /* login */
+    .navbar .login {
+        width: max-content;
+    }
+
+    .navbar .login .icon_log {
+        display: block;
+        z-index: 10;
+        position: relative;
+    }   
+
+}
+

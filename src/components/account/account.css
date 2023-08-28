@@ -1,0 +1,83 @@
+.account {
+    padding: 5rem 0;
+}
+
+.account > .top {
+    background-image: url(../../assets/img/anh2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 4rem 7%;
+}
+
+.account > .top > h3 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: white;
+}
+
+.account > .top > .QR_link {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    width: max-content;
+    margin: 2rem 0;
+}
+
+.account > .top > .QR_link span {
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.account > .top > .QR_link img {
+    width: 6.2rem;
+    height: 6.2rem;
+    object-fit: cover;
+}
+
+.account > .top > p {
+    margin-bottom: 2rem;
+}
+
+.account > .top > p,
+.account > .top > a {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.account > .top > a i {
+    margin-left: 1rem;
+}
+
+.account > .bottom {
+    margin-top: 2rem;
+    padding: 4rem 7%;
+    background-image: url(../../assets/img/anh26.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.account > .bottom > .title {
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: black;
+    padding: 8px 0px 8px 8px;
+    margin-bottom: 3rem;
+}
+
+.account > .bottom > a {
+    width: 25rem;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+}
+
+.account > .bottom > a i {
+    color: var(--primary-color);
+}

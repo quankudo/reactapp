@@ -1,0 +1,65 @@
+.banners {
+    padding: 7rem 7%;
+    background-color: #f5f6f8;
+    gap: 4rem;
+    align-items: stretch;
+}
+
+.banners .left_b,
+.banners .right_b {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+    flex: 1 1 40rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+}
+
+.banners .left_b {
+    color: black;
+    background-image: url(../../assets/img/anh23.jpg);
+}
+
+.banners .right_b {
+    background-image: url(../../assets/img/anh24.jpg);
+    color: white;
+}
+
+.banners .left_b .title,
+.banners .right_b .title {
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 8px 0px 8px 8px
+}
+
+.banners .left_b ul ,
+.banners .right_b ul {
+    padding: 1rem 3rem;
+}
+
+.banners .left_b ul li,
+.banners .right_b ul li {
+    list-style: disc;
+    list-style-position: inside;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+}
+
+.banners .left_b .link,
+.banners .right_b .link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    gap: 1rem;
+    margin-left: 1rem;
+}
+
+.banners .left_b .link i {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .banners {
+        flex-wrap: wrap;
+    }
+}

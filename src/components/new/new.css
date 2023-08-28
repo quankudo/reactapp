@@ -1,0 +1,69 @@
+.new {
+    margin-top: 10rem;
+    background-image: url(../../assets/img/anh28.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 10rem;
+    padding-top: 2rem;
+    position: relative;
+    height: 26rem;
+}
+
+.new-content {
+    font-size: 1.6rem;
+    color: #827e7e;
+}
+
+.new-content > span i{
+    font-size: 1.2rem;
+}
+
+.new-content > span:last-child{
+    color: black;
+}
+
+.new > p {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    font-weight: 400;
+    color: white;
+}
+
+.new-2 {
+    background-color: #f5f6f8;
+    padding: 3rem 7%;
+}
+
+.new-2 .contents {
+    justify-content: center;
+    gap: 8rem;
+}
+
+.new-2 img {
+    width: 17rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.new-2 .Content {
+    width: 50rem;
+}
+
+.new-2 .Content > h3 {
+    font-weight: 300;
+    font-size: 28px;
+    color: #000000;
+    line-height: 35px;
+}
+
+.new-2 .Content > p {
+    color: #616161;
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}

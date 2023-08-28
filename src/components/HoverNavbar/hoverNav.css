@@ -1,0 +1,122 @@
+.hoverNav {
+    gap: 0;
+    position: fixed;
+    top: 11rem;
+    left: 7%;
+    display: none;
+    right: 7%;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    border-radius: 10px;
+    align-items: stretch;
+}
+/* content */
+
+.hoverNav > .content {
+    width: 40rem;
+    padding: 2rem;
+    border-right: 1px solid rgb(206, 205, 205);
+
+}
+
+.hoverNav > .content ul li:first-child {
+    background-color: black;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.hoverNav > .content ul li:first-child span {
+    color: #fff;
+}
+
+.hoverNav > .content ul li:first-child a > i {
+    color: var(--primary-color);
+    opacity: 1;
+    visibility: inherit;
+}
+
+.hoverNav > .content ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1.2rem 2rem;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+.hoverNav .content ul li a i {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.hoverNav .content ul li a span {
+    color: black;
+    font-weight: 500;
+
+}
+
+.hoverNav .content ul li a:hover {
+    background-color: black;
+}
+
+.hoverNav .content ul li a:hover > span {
+    color: white;
+}
+
+.hoverNav .content ul li a:hover > i {
+    opacity: 1;
+    visibility: inherit;
+    color: var(--primary-color);
+}
+
+/* nav infomation */
+
+.hoverNav .nav_info {
+    flex: 1 1 50rem;
+    background-color: #fff;
+}
+
+.hoverNav .nav_info .list_icon-text{
+    padding: 1rem 2rem;
+    gap: 10rem;
+}
+
+.hoverNav .nav_info .list_icon-text .item_icon-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hoverNav .nav_info .list_icon-text .item_icon-text i {
+    font-size: 4rem;
+}
+
+.hoverNav .nav_info .endow {
+    margin-top: 5rem;
+    background-color: rgb(244, 244, 244);
+    padding: 1rem 2rem;
+}
+
+.hoverNav .nav_info .endow a i {
+    font-size: 4rem;
+    color: var(--primary-color);
+    padding-right: 1rem;
+}
+
+.hoverNav .nav_info .endow a span,
+.hoverNav .nav_info .list_icon-text .item_icon-text p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.hoverNav .nav_info .endow .icon_endow i {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
+    
+}
+
+
