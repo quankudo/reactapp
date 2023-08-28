@@ -3,7 +3,7 @@ import './new.css'
 import anh29 from '../../assets/img/anh29.png'
 import { Link } from "react-router-dom";
 
-const New = () => {
+const New = (new_2 = false) => {
   return (
     <>
       <section className='new'>
@@ -14,17 +14,22 @@ const New = () => {
           </div>
           <p>Chào mừng bạn đến với website Techcombank <br />dành cho khách hàng cá nhân</p>
       </section>
-      <section className='new-2'>
-        <div className='contents d-flex'> 
-          <img src={anh29} />
-          <div className='Content'>
-            <h3>Bắt đầu hành trình trải nghiệm của bạn tại Techcombank</h3>
-            <p>Mở tài khoản dễ dàng trong 1 phút trên ứng dụng Techcombank Mobile để tận hưởng những tính năng mới nhất và an toàn hơn khi giao dịch ngân hàng.</p>
+      {
+        new_2 
+        ? <section className='new-2'>
+            <div className='contents d-flex'> 
+              <img src={anh29} />
+              <div className='Content'>
+                <h3>Bắt đầu hành trình trải nghiệm của bạn tại Techcombank</h3>
+                <p>Mở tài khoản dễ dàng trong 1 phút trên ứng dụng Techcombank Mobile để tận hưởng những tính năng mới nhất và an toàn hơn khi giao dịch ngân hàng.</p>
 
-          </div>
-        </div>
+              </div>
+            </div>
 
-      </section>
+          </section>
+        : false
+
+      }
     </>
   )
 }

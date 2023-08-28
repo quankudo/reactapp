@@ -8,7 +8,7 @@ const UserPage = () => {
     <div className='UserPage'>
         <Header />
         <Navbar />
-        <New new ={true}/>
+        <New new_2 ={true}/>
     </div>
   )
 }
